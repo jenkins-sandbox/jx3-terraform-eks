@@ -4,7 +4,7 @@
 variable "region" {
   description = "AWS region code for creating resources."
   type = string
-  default     = "us-west-2"
+  default     = "us-west-1"
 
 }
 
@@ -41,7 +41,7 @@ variable "is_jx2" {
 variable "jx_git_url" {
   description = "URL for the Jenins X cluster git repository"
   type        = string
-  default     = "git@github.com:jenkins-sandbox/jx3-eks-vault.git"
+  default     = "https://github.com/jenkins-sandbox/jx3-eks-vault.git"
 }
 
 variable "jx_bot_username" {
@@ -53,4 +53,5 @@ variable "jx_bot_username" {
 variable "jx_bot_token" {
   description = "Bot token used to interact with the Jenkins X cluster git repository"
   type        = string
+//  default     = "xxxxxx" or export TF_VAR_jx_bot_token=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
 }
